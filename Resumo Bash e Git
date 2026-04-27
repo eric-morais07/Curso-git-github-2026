@@ -1,0 +1,54 @@
+## resumo Básico de Git + Bash
+
+ – Conceitos e Comandos
+
+O Git é um sistema de versionamento que permite salvar e controlar versões do seu projeto.
+
+ Principais comandos 
+
+git init
+→ Inicializa um repositório Git na pasta
+
+git status
+→ Mostra o estado atual dos arquivos (modificados, adicionados, etc.)
+
+git add <arquivo>
+→ Adiciona o arquivo para a área de preparação (staging area)
+
+git commit -m "mensagem"
+→ Salva um checkpoint com descrição
+
+git log
+→ Ve Historico de commit
+
+
+→ Mostra o histórico de commits
+🔄 Fluxo de Trabalho no Git
+Criar pasta do projeto
+git init
+Criar/editar arquivos
+git status (ver o que mudou)
+git add (preparar arquivos)
+git commit (salvar versão)
+Repetir o processo
+
+👉 Resumindo:
+Editar → Adicionar → Commitar → Repetir
+
+💻 Comandos Básicos de Bash
+ls → Lista arquivos da pasta
+ls -a → Lista tudo (incluindo ocultos)
+cd <pasta> → Entra em um diretório
+cd .. → Volta uma pasta
+pwd → Mostra o caminho atual
+mkdir <nome> → Cria pasta
+rm <arquivo> → Remove arquivo
+rm -rf <pasta> → Remove pasta inteira (cuidado ⚠️)
+cat <arquivo> → Mostra conteúdo
+nano <arquivo> → Edita/cria arquivo pelo terminal
+🧠 Resumo geral (visão simples)
+Git = controle de versões
+Commit = “foto” do seu projeto
+add = prepara o que vai entrar na foto
+commit = tira a foto
+log = vê o histórico
