@@ -2,10 +2,45 @@ Guit
 
 COMANDO BASICO BASH
 
-ls -> lista oque existe dentro do diretório
-cd -> muda de diretório
+ls -> lista oque existe dentro do diretório.
+
+cd -> muda de diretório.
+
 pwd -> mostra o caminho absoluto que estou ou do diretório em que estou
-.. -> sobe uma pasta acima 
-mkdir + nome da pasta -> cria a pasta
--a -> mostra tudo arquivos ocultos ( exemplo se eu quiser lista tudo em uma pasta inclusive os oculto seria: ls -a)
+
+.. -> sobe uma pasta acima
+ 
+mkdir + nome da pasta -> cria a pasta.
+
+-a -> mostra tudo arquivos ocultos ( exemplo se eu quiser lista tudo em uma pasta inclusive os oculto seria: ls -a).
+
+cat -> ele acessa os arquivos editaveis que esta dentro da pasta.
+
+rm -rf + nome do arquivo -> ele exclui.
+
+
+
+COMANDOS GIT 
+
+git init . -> esse comando ele habilita a pasta a se tornar uma pasta "versonavel" que permite ela versone arquivos.
+
+git status -> ele me mostra como esta meu diretório.
+git add -> ele permite add o arquivo que va para o commit  ou sinaliza o que vai entrar no check point.
+git commit -m "dentro das aspas precisa colocar uma descrição" -> ele salva o que foi colocado no git add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
