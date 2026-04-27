@@ -14,9 +14,11 @@ mkdir + nome da pasta -> cria a pasta.
 
 -a -> mostra tudo arquivos ocultos ( exemplo se eu quiser lista tudo em uma pasta inclusive os oculto seria: ls -a).
 
-cat -> ele acessa os arquivos editaveis que esta dentro da pasta.
+cat -> Ele exibe conteúdo do arquivo.
 
-rm -rf + nome do arquivo -> ele exclui.
+rm + nome do arquivo -> ele remove arquivo ou diretorio.
+
+nano + nome do arquivo txt -> ele permite criar arquivos digitáveis dentro do bash
 
 
 
