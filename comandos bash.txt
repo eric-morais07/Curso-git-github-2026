@@ -1,0 +1,11 @@
+Guit
+
+COMANDO BASICO BASH
+
+ls -> lista oque existe dentro do diretório
+cd -> muda de diretório
+pwd -> mostra o caminho absoluto que estou ou do diretório em que estou
+.. -> sobe uma pasta acima 
+mkdir + nome da pasta -> cria a pasta
+-a -> mostra tudo arquivos ocultos ( exemplo se eu quiser lista tudo em uma pasta inclusive os oculto seria: ls -a)
+ 
