@@ -7,3 +7,5 @@ git status -> mostra status do trabalho. (de cada arquivo)
 git add nome_arquivo -> ele permite add o arquivo que va para o commit  ou sinaliza o que vai entrar no check point.
 
 git commit -m "dentro das aspas precisa colocar uma descrição" -> ele salva o que foi colocado no git add
+
+git log -> ele permite visualizar todos os commits feitos.

@@ -1,6 +1,4 @@
-Guit
-
-COMANDO BASICO BASH
+	COMANDO BASICO BASH
 
 ls -> lista oque existe dentro do diretório.
 
@@ -17,18 +15,20 @@ mkdir + nome da pasta -> cria a pasta.
 cat -> Ele exibe conteúdo do arquivo.
 
 rm + nome do arquivo -> ele remove arquivo ou diretorio.
+rm -rf -> remove de forma recursiva e forcada todos os diretórios 
 
 nano + nome do arquivo txt -> ele permite criar arquivos digitáveis dentro do bash
 
 
 
-COMANDOS GIT 
+	COMANDOS GIT 
 
 git init . -> esse comando ele habilita a pasta a se tornar uma pasta "versonavel" que permite ela versone arquivos.
 
 git status -> ele me mostra como esta meu diretório.
 git add -> ele permite add o arquivo que va para o commit  ou sinaliza o que vai entrar no check point.
 git commit -m "dentro das aspas precisa colocar uma descrição" -> ele salva o que foi colocado no git add
+git log -> permite visualizar todos os commits
 
 
 
