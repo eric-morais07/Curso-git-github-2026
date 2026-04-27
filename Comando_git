@@ -9,3 +9,16 @@ git add nome_arquivo -> ele permite add o arquivo que va para o commit  ou sinal
 git commit -m "dentro das aspas precisa colocar uma descrição" -> ele salva o que foi colocado no git add
 
 git log -> ele permite visualizar todos os commits feitos.
+
+
+## FLUXO DE TRABALHO
+
+1. Criar diretório do projeto
+2. iniciar git dentro do diretório criado (git init .)
+3. Editar ou criar arquivos
+4. git status 
+5. git add <nome do arquivo>
+6. git status
+7. git commit -m "mensagem"
+8. git status
+9. volta para o passo 3
