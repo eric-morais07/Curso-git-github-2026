@@ -12,3 +12,5 @@ Sem o -b, o git checkout serve apenas para trocar entre branches que já existem
 git branch -> é o camnado que sinaliza todas as branch do projeto.
 
 git merge <nome da branch> -> é o camando para trazer para branch principal todas alterações e criações feita e determinada branch
+
+git branch -D <nome-do-arquivo> -> é o comando para excluir branch.
