@@ -24,7 +24,4 @@ nano + nome do arquivo txt -> ele permite criar arquivos digitáveis dentro do b
 
 
 
-
-
-
  

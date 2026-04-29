@@ -11,12 +11,6 @@ git commit -m "dentro das aspas precisa colocar uma descrição" -> ele salva o 
 
 git log -> ele permite visualizar todos os commits feitos.
 
-aula 2 
-git diff + nome do arquivo especifico ou . para todos os arquivos na pasta -> é o comando que mostra as diferenças entre versões código.
-Ele compara o estado atual dos seus arquivos com o último commit (ou entre branches), exibindo exatamente quais linhas foram adicionadas (em verde/+) ou removidas (em vermelho/-). É, essencialmente, o "antes e depois" das suas alterações.
-
-git reset + nome do arquivo -> serve para "tirar" um arquivo do Stage (desfazer o git add) sem apagar o que você escreveu.
-
 
 ## FLUXO DE TRABALHO
 
