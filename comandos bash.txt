@@ -19,6 +19,7 @@ rm -rf -> remove de forma recursiva e forcada todos os diretórios
 
 nano + nome do arquivo txt -> ele permite criar arquivos digitáveis dentro do bash.
 
+aula2
 
 
 
