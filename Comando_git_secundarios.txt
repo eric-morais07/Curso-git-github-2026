@@ -9,4 +9,6 @@ git checkout -b <nome-da-branch> é um "atalho" que faz duas coisas ao mesmo tem
 checkout (Switch): Muda você imediatamente para essa nova branch.
 Sem o -b, o git checkout serve apenas para trocar entre branches que já existem.
 
-git branch -> é o camnado que sinaliza todas as branch do projeto 
+git branch -> é o camnado que sinaliza todas as branch do projeto.
+
+git merge <nome da branch> -> é o camando para trazer para branch principal todas alterações e criações feita e determinada branch
