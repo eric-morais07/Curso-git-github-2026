@@ -1,0 +1,39 @@
+CONCEITOS BÁSICOS: BRANCHES NO GIT
+
+1. O QUE É UMA BRANCH?
+Uma branch (ramificação) funciona como um "universo paralelo" ou uma linha do tempo alternativa para o seu código. No Git, a linha principal é geralmente chamada de 'main' ou 'master'.
+
+Imagine que a 'main' é a estrada principal. Ao criar uma branch, você cria um desvio. Você pode construir novas funcionalidades ou corrigir erros nesse desvio sem interromper o tráfego na estrada principal. Se a obra ficar boa, você a conecta de volta à estrada principal (Merge).
+
+2. COMANDOS PRINCIPAIS (CÓDIGOS)
+
+Listar branches:
+$ git branch
+
+Criar uma nova branch:
+$ git branch nome-da-funcionalidade
+
+Mudar para uma branch existente:
+$ git checkout nome-da-funcionalidade
+
+Criar e mudar para a nova branch (Atalho):
+$ git checkout -b nova-funcionalidade
+
+Mesclar alterações (unir a branch atual com outra):
+$ git merge nome-da-branch
+
+Deletar uma branch:
+$ git branch -d nome-da-branch
+
+3. FLUXO DE TRABALHO COMUM
+- Você está na 'main'.
+- Cria uma branch: 'git checkout -b ajuste-layout'.
+- Faz suas alterações e commita o código.
+- Volta para a main: 'git checkout main'.
+- Une o trabalho: 'git merge ajuste-layout'.
+- Deleta a branch de apoio: 'git branch -d ajuste-layout'.
+
+4. VANTAGENS
+- Organização: Cada tarefa fica em seu lugar.
+- Segurança: Erros em uma branch não quebram a versão oficial do software.
+- Trabalho em Equipe: Vários desenvolvedores podem mexer no mesmo projeto simultaneamente sem conflitos diretos.
