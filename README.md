@@ -6,5 +6,5 @@ Curso de Git muito Bom!
 
 
 
-Teste de aprendizado
+Teste de aprendizado, continuo aprendizado
 
