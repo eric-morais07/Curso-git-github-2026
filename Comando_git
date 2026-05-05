@@ -11,8 +11,11 @@ git commit -m "dentro das aspas precisa colocar uma descrição" -> ele salva o 
 
 git log -> ele permite visualizar todos os commits feitos.
 
+git fetch -> ele traz todas as branchs que estao no github, apos esse comando preciso fazer 
+um git checkout <nome-da-branch> para ele reconhecer a branch vinda do git hub
 
-## FLUXO DE TRABALHO
+
+## FLUXO DE TRABALHO LOCAL
 
 1. Criar diretório do projeto
 2. iniciar git dentro do diretório criado (git init .)
