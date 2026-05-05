@@ -1,0 +1,28 @@
+Nessa aula, foi apresentada a ferramenta VSCode como um ambiente de desenvolvimento integrado que potencializa o uso de diversas tecnologias 
+no universo da programação. No contexto do Git, o VSCode se destaca por centralizar em um único lugar o acesso à pasta de trabalho, 
+a visualização e edição de arquivos, e o terminal para execução de comandos — eliminando a necessidade de alternar entre diferentes programas, 
+o que torna o fluxo de trabalho muito mais ágil e organizado.
+Além disso, o VSCode oferece extensões específicas para Git, como o GitLens, que exibe o histórico de alterações linha por linha diretamente 
+no editor, aprofundando ainda mais o controle sobre o código. Outro ponto interessante é que, além do terminal, o VSCode possui uma aba gráfica 
+de controle de versão, facilitando a visualização de mudanças, a realização de commits e a resolução de conflitos sem a necessidade de digitar 
+nenhum comando — o que é especialmente útil para quem está começando.
+Por fim, sua integração nativa com o GitHub torna o processo de push e pull simples e intuitivo. Aprender Git dentro do VSCode é uma excelente 
+porta de entrada para o versionamento de código, pois é possível ver na prática, em tempo real, o efeito de cada comando nos arquivos do projeto.
+
+Nessa aula, também foram abordados conceitos fundamentais sobre o Git Flow, uma metodologia essencial para organizar o trabalho em equipe com o Git.
+Uma das regras mais importantes — e indispensáveis — é a de que jamais se deve trabalhar diretamente na branch main, pois ela é reservada 
+exclusivamente para o código que já está estável e aprovado.
+Para o desenvolvimento do dia a dia, utiliza-se uma branch separada chamada develop, seguindo um padrão amplamente adotado no mercado. 
+É nela que todo o trabalho acontece e, somente quando tudo estiver funcionando corretamente, realiza-se o merge para a main, garantindo que ela 
+permaneça sempre limpa e confiável.
+Esse fluxo de trabalho vai muito além de uma simples convenção — ele é uma prática que protege o projeto de erros graves em produção. 
+Em times maiores, o Git Flow se expande ainda mais, com branches específicas para novas funcionalidades (feature branches), correções urgentes 
+(hotfix) e preparação de versões (release), tornando o processo de desenvolvimento muito mais seguro e rastreável.
+Adotar essa metodologia desde cedo é um diferencial importante, pois demonstra maturidade no desenvolvimento de software e é um padrão esperado 
+na grande maioria das empresas do mercado.
+
+também foram apresentados padrões amplamente utilizados no mercado para nomear commits e branches no Git — práticas essenciais 
+para manter projetos organizados e colaborativos. abaixo links:
+https://medium.com/@BradleyOThompson/conventional-commits-ffad83dfe561
+https://medium.com/prolog-app/nossos-padr%C3%B5es-de-nomenclatura-para-branches-e-commits-fade8fd17106
+https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657
