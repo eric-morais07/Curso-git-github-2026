@@ -1,0 +1,83 @@
+.gitignore
+===========
+ 
+É um arquivo que diz ao Git quais arquivos ignorar — ou seja, não rastrear, não commitar e não mostrar como
+ "não monitorados".
+ 
+COMO USAR
+---------
+ 
+1. Criar o arquivo
+ 
+Na raiz do seu projeto, crie um arquivo chamado .gitignore pelo terminal ou pelo próprio editor de texto:
+ 
+    touch .gitignore
+ 
+ 
+2. Adicionar o que quer ignorar
+ 
+Abra o arquivo e escreva os padrões. No curso, usamos:
+ 
+    *.pptx
+    *.xlsx
+    *.csv
+    *.xls
+    *.parquet
+ 
+O * funciona como um curinga — ele representa qualquer nome de arquivo antes da extensão.
+Por exemplo, *.csv ignora dados.csv, vendas.csv, relatorio.csv, etc.
+ 
+Além dessas extensões, outros arquivos e pastas comuns também podem ser ignorados,
+como node_modules/, .env, *.log, entre outros — dependendo do projeto.
+===========================================================================================
+
+.gitkeep
+========
+ 
+É um arquivo vazio criado dentro de pastas vazias para forçar o Git a rastreá-las —
+já que, por padrão, o Git ignora pastas que não possuem nenhum arquivo dentro.
+ 
+COMO USAR
+---------
+ 
+1. Criar o arquivo
+ 
+Dentro da pasta vazia que você quer rastrear, crie um arquivo chamado .gitkeep:
+ 
+    touch nome-da-pasta/.gitkeep
+    ou pelo explorer do vscode
+ 
+2. Adicionar ao repositório
+ 
+Depois, basta adicionar normalmente ao Git:
+ 
+    git add nome-da-pasta/.gitkeep
+    git commit -m "mantém pasta no repositório"
+ 
+A pasta agora será rastreada e aparecerá no repositório remoto (ex: GitHub).
+ 
+ 
+POR QUE ISSO É NECESSÁRIO?
+---------------------------
+ 
+O Git rastreia arquivos, não pastas. Então se você tiver uma pasta vazia
+(como data/, logs/ ou temp/), ela simplesmente não vai aparecer no repositório.
+ 
+O .gitkeep é uma convenção — não é um recurso oficial do Git, é só um arquivo
+vazio com esse nome que a comunidade adotou para resolver esse problema.
+ 
+Exemplo prático:
+ 
+    projeto/
+    ├── data/
+    │   └── .gitkeep     ← garante que a pasta "data" apareça no repositório
+    ├── logs/
+    │   └── .gitkeep     ← mesmo caso para "logs"
+    └── src/
+        └── main.py
+ 
+OBSERVAÇÃO
+----------
+ 
+Qualquer nome de arquivo funcionaria para esse propósito (ex: .githold, .keep),
+mas .gitkeep é o nome mais usado e reconhecido pela comunidade.
