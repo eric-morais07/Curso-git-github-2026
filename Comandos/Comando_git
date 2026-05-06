@@ -1,6 +1,6 @@
 COMANDOS GIT 
 
-Aula 1
+
 git init . -> cria repositorio na pasta atual.
 
 git status -> mostra status do trabalho. (de cada arquivo)
@@ -13,6 +13,15 @@ git log -> ele permite visualizar todos os commits feitos.
 
 git fetch -> ele traz todas as branchs que estao no github, apos esse comando preciso fazer 
 um git checkout <nome-da-branch> para ele reconhecer a branch vinda do git hub
+
+.gitignore -> O arquivo .gitignore serve para dizer ao Git quais arquivos ou pastas ele não deve rastrear. 
+Isso é útil para arquivos binários pesados (como imagens de alta resolução ou apresentações .pptx), arquivos 
+de configuração pessoal ou pastas de dependências que não precisam estar no repositório.
+
+.gitkeep -> Arquivo vazio colocado dentro de pastas que não possuem conteúdo.
+Motivo: O Git não rastreia pastas vazias por padrão.
+Uso: Serve para garantir que a estrutura da pasta fique visível no GitHub, mesmo sem arquivos reais dentro dela.
+Importante: O arquivo deve estar DENTRO da pasta que você deseja manter.
 
 
 ## FLUXO DE TRABALHO LOCAL

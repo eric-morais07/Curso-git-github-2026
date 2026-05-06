@@ -1,0 +1,124 @@
+FORK
+====
+ 
+É uma cópia de um repositório de outra pessoa feita para dentro da sua conta
+no GitHub. Com o fork você pode estudar, modificar e experimentar o projeto
+livremente — sem afetar o repositório original.
+ 
+ 
+QUANDO USAR FORK
+----------------
+ 
+- Quando quiser contribuir com um projeto open source
+- Quando quiser usar o projeto de outra pessoa como base para o seu
+- Quando não tiver permissão de editar o repositório original diretamente
+- Quando quiser estudar um projeto sem risco de quebrar nada
+ 
+ 
+DIFERENÇA ENTRE FORK E CLONE
+-----------------------------
+ 
+   Fork                                  Clone
+   ────────────────────────────          ─────────────────────────────
+   Copia o repositório para              Baixa o repositório para
+   a SUA conta no GitHub                 a sua máquina local
+   (fica na nuvem)                       (fica no seu computador)
+ 
+   Feito pelo GitHub (botão)             Feito pelo terminal ou VS Code
+ 
+Na prática, você geralmente faz os dois juntos:
+fork (no GitHub) → clone (na sua máquina) → edita → push → pull request
+ 
+ 
+FLUXO DE TRABALHO COM FORK
+---------------------------
+ 
+1. Fazer o Fork no GitHub
+ 
+   - Acesse o repositório que quer copiar no github.com
+   - Clique no botão "Fork" (canto superior direito)
+   - Escolha sua conta como destino
+   - O GitHub cria uma cópia do repositório dentro da sua conta
+ 
+ 
+2. Clonar o fork para sua máquina
+ 
+   Agora você baixa a SUA cópia (não o original) para trabalhar localmente.
+   No terminal do VS Code:
+ 
+       git clone https://github.com/seu-usuario/nome-do-repositorio.git
+ 
+   Ou pelo VS Code:
+   - Ctrl + Shift + P → "Git: Clone" → cole a URL do SEU fork
+ 
+ 
+3. Fazer as alterações
+ 
+   - Edite os arquivos normalmente no VS Code
+   - Salve (Ctrl + S)
+   - Faça o staged, commit e push como de costume
+ 
+       git add .
+       git commit -m "minha alteração"
+       git push
+ 
+ 
+4. Abrir um Pull Request (PR)
+ 
+   Se quiser sugerir suas alterações para o repositório original:
+ 
+   - Acesse seu fork no github.com
+   - Clique em "Contribute" → "Open pull request"
+   - Descreva o que você alterou
+   - Clique em "Create pull request"
+ 
+   O dono do repositório original vai revisar e decidir se aceita ou não.
+ 
+ 
+O QUE É PULL REQUEST
+---------------------
+ 
+É um pedido para que o dono do repositório original aceite as suas alterações.
+Você está dizendo: "Fiz essas mudanças no meu fork — você quer incluir no projeto?"
+ 
+    Seu fork (sua conta) ──→ Pull Request ──→ Repositório original
+                                   ↓
+                         Dono revisa e decide:
+                         aceita (merge) ou recusa
+ 
+ 
+MANTENDO SEU FORK ATUALIZADO
+------------------------------
+ 
+Se o repositório original for atualizado depois que você fez o fork,
+seu fork fica desatualizado. Para sincronizar:
+ 
+   No GitHub:
+   - Acesse seu fork
+   - Clique em "Sync fork" → "Update branch"
+ 
+   Ou pelo terminal:
+ 
+       git remote add upstream https://github.com/usuario-original/repositorio.git
+       git fetch upstream
+       git merge upstream/main
+ 
+ 
+VISÃO GERAL DO FLUXO COMPLETO
+-------------------------------
+ 
+    Repositório original (outro usuário)
+           ↓
+        FORK  ←──────────────────────────── botão no GitHub
+           ↓
+    Seu repositório no GitHub (sua conta)
+           ↓
+        CLONE ←──────────────────────────── git clone
+           ↓
+    Sua máquina local
+           ↓
+    Edita → Commit → Push
+           ↓
+    Seu repositório no GitHub atualizado
+           ↓
+      PULL REQUEST ────────────────────────→ Repositório original
