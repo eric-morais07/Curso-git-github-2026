@@ -21,7 +21,6 @@ git commit -m "mensagem"
 git log
 → Ve Historico de commit
 
-
 → Mostra o histórico de commits
 🔄 Fluxo de Trabalho no Git
 Criar pasta do projeto

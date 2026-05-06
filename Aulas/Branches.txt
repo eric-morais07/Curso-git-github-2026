@@ -1,9 +1,12 @@
 CONCEITOS BÁSICOS: BRANCHES NO GIT
 
 1. O QUE É UMA BRANCH?
-Uma branch (ramificação) funciona como um "universo paralelo" ou uma linha do tempo alternativa para o seu código. No Git, a linha principal é geralmente chamada de 'main' ou 'master'.
+Uma branch (ramificação) funciona como um "universo paralelo" ou uma linha do tempo alternativa para o seu código. 
+No Git, a linha principal é geralmente chamada de 'main' ou 'master'.
 
-Imagine que a 'main' é a estrada principal. Ao criar uma branch, você cria um desvio. Você pode construir novas funcionalidades ou corrigir erros nesse desvio sem interromper o tráfego na estrada principal. Se a obra ficar boa, você a conecta de volta à estrada principal (Merge).
+Imagine que a 'main' é a estrada principal. Ao criar uma branch, você cria um desvio. Você pode construir novas 
+funcionalidades ou corrigir erros nesse desvio sem interromper o tráfego na estrada principal. Se a obra ficar boa, 
+você a conecta de volta à estrada principal (Merge).
 
 2. COMANDOS PRINCIPAIS (CÓDIGOS)
 

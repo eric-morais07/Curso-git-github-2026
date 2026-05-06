@@ -1,0 +1,108 @@
+GITHUB E FLUXO DE TRABALHO
+==========================
+ 
+O GitHub é uma plataforma online onde você armazena, compartilha e versiona
+seus projetos usando Git. Enquanto o Git funciona na sua máquina local,
+o GitHub guarda tudo na nuvem — permitindo acesso de qualquer lugar e
+colaboração com outras pessoas.
+ 
+O QUE ACONTECE DEPOIS DO COMMIT NO VS CODE
+-------------------------------------------
+ 
+Quando você cria seus arquivos e faz o commit pelo VS Code, o trabalho
+ainda está apenas na sua máquina. O fluxo completo é:
+ 
+    [arquivos criados] → [commit local] → [push para o GitHub] → [repositório remoto atualizado]
+ 
+ 
+PASSO A PASSO COMPLETO
+-----------------------
+ 
+1. Criar o repositório no GitHub
+ 
+   - Acesse github.com e faça login
+   - Clique em "New repository"
+   - Dê um nome ao repositório
+   - Escolha público ou privado
+   - Clique em "Create repository"
+   - O GitHub vai te mostrar os comandos para conectar seu projeto local
+ 
+ 
+2. Conectar seu projeto local ao GitHub (feito uma única vez)
+ 
+   No terminal do VS Code:
+ 
+       git remote add origin https://github.com/seu-usuario/seu-repositorio.git
+       git branch -M main
+       git push -u origin main
+ 
+   Após isso, seu projeto local está vinculado ao repositório remoto.
+ 
+ 
+3. Fluxo do dia a dia no VS Code
+ 
+   Depois que os arquivos estão criados e o repositório já está conectado,
+   o fluxo normal é:
+ 
+   PASSO 1 — Salvar as alterações nos arquivos (Ctrl + S)
+ 
+   PASSO 2 — Abrir o painel de controle do Git no VS Code
+             (ícone de ramificação na barra lateral esquerda)
+ 
+   PASSO 3 — Staged Changes: clicar no "+" ao lado dos arquivos
+             que quer incluir no commit
+             (equivale ao git add)
+ 
+   PASSO 4 — Escrever uma mensagem de commit no campo de texto
+             Exemplo: "adiciona análise de vendas"
+ 
+   PASSO 5 — Clicar em "Commit" (ou Ctrl + Enter)
+             (equivale ao git commit)
+ 
+   PASSO 6 — Clicar em "Sync Changes" ou "Push"
+             (equivale ao git push)
+             Isso envia suas alterações para o GitHub.
+ 
+ 
+4. Verificar no GitHub
+ 
+   Após o push, acesse seu repositório no github.com —
+   os arquivos já vão aparecer lá atualizados.
+ 
+ 
+RESUMO DOS COMANDOS EQUIVALENTES
+----------------------------------
+ 
+   O que o VS Code faz visualmente | Comando no terminal
+   ---------------------------------|--------------------
+   Adicionar arquivo (staged)       | git add nome-do-arquivo
+   Escrever mensagem + Commit       | git commit -m "mensagem"
+   Sync Changes / Push              | git push
+   Pull (baixar atualizações)       | git pull
+ 
+ 
+DICA IMPORTANTE — SEMPRE FAÇA PULL ANTES DE PUSH
+--------------------------------------------------
+ 
+Se você trabalha em mais de um computador ou em equipe, antes de enviar
+suas alterações faça um Pull para baixar o que há de novo no repositório:
+ 
+    git pull
+ 
+No VS Code, basta clicar em "Sync Changes" — ele faz o pull e o push juntos.
+ 
+ 
+VISÃO GERAL DO FLUXO COMPLETO
+-------------------------------
+ 
+    Máquina local                          GitHub (nuvem)
+    ─────────────────────────────          ──────────────────────
+    Cria/edita arquivos
+         ↓
+    git add (staged)
+         ↓
+    git commit (salva localmente)
+         ↓
+    git push ─────────────────────────→   Repositório atualizado
+                                               ↓
+    git pull ←────────────────────────   Outros colaboradores
